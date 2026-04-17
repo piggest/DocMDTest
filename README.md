@@ -1,4 +1,4 @@
-# DocMDTest
+# ConiferFruits
 
 `docs/` 配下のMarkdownファイルをDocusaurusで静的ドキュメントサイトとして表示するプロジェクト。
 

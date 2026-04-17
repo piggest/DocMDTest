@@ -3,10 +3,10 @@ import Translate from '@docusaurus/Translate';
 import IconEdit from '@theme/Icon/Edit';
 
 export default function EditThisPage({ editUrl }) {
-  const prefix = 'https://github.com/piggest/DocMDTest/edit/main/docs/';
+  const prefix = 'https://github.com/piggest/ConiferFruits/edit/main/docs/';
   const docPath = editUrl.startsWith(prefix) ? editUrl.slice(prefix.length) : '';
   const appUrl = docPath
-    ? `docmdtest://edit?path=${encodeURIComponent('docs/' + docPath)}`
+    ? `cnfr://edit?path=${encodeURIComponent('docs/' + docPath)}`
     : null;
 
   return (

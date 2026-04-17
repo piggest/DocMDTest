@@ -2,15 +2,15 @@
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'DocMDTest',
+  title: 'ConiferFruits',
   tagline: 'ドキュメントサイト',
   favicon: 'img/favicon.ico',
 
   url: 'https://piggest.github.io',
-  baseUrl: '/DocMDTest/',
+  baseUrl: '/ConiferFruits/',
 
   organizationName: 'piggest',
-  projectName: 'DocMDTest',
+  projectName: 'ConiferFruits',
   trailingSlash: false,
 
   onBrokenLinks: 'throw',
@@ -37,7 +37,7 @@ const config = {
           path: '../docs',
           routeBasePath: '/',
           sidebarPath: './sidebars.js',
-          editUrl: ({docPath}) => `https://github.com/piggest/DocMDTest/edit/main/docs/${docPath}`,
+          editUrl: ({docPath}) => `https://github.com/piggest/ConiferFruits/edit/main/docs/${docPath}`,
         },
         blog: false,
         theme: {
@@ -68,10 +68,10 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'DocMDTest',
+        title: 'ConiferFruits',
         items: [
           {
-            href: 'https://github.com/piggest/DocMDTest',
+            href: 'https://github.com/piggest/ConiferFruits',
             label: 'GitHub',
             position: 'right',
           },
@@ -79,7 +79,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        copyright: `© ${new Date().getFullYear()} DocMDTest`,
+        copyright: `© ${new Date().getFullYear()} ConiferFruits`,
       },
       colorMode: {
         defaultMode: 'light',
