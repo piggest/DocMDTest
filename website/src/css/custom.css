@@ -1,4 +1,6 @@
 :root {
+  /* サイドバー幅を狭める（デフォルト 300px → 220px） */
+  --doc-sidebar-width: 220px !important;
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;

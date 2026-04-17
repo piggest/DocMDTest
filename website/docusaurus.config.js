@@ -86,6 +86,12 @@ const config = {
         minHeadingLevel: 2,
         maxHeadingLevel: 3,
       },
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: false,
+        },
+      },
     }),
 };
 
