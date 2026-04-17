@@ -2,6 +2,19 @@
   /* サイドバー幅を狭める（デフォルト 300px → 220px） */
   --doc-sidebar-width: 220px !important;
   --ifm-color-primary: #2e8555;
+}
+
+/* モバイル時のドロワーもフルスクリーンではなく狭める */
+@media (max-width: 996px) {
+  .navbar-sidebar {
+    width: 280px !important;
+  }
+  .navbar-sidebar__backdrop {
+    background: rgba(0, 0, 0, 0.4);
+  }
+}
+
+:root {
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
   --ifm-color-primary-darkest: #205d3b;
