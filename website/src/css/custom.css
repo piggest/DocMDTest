@@ -25,20 +25,9 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-/* ========== サイドバーの表示切替閾値を下げる ========== */
-/* Docusaurus デフォルト: ≥997px で docked、≤996px で drawer */
-/* 上書き: ≥601px で docked を優先、≤600px のみ drawer */
-@media (min-width: 601px) and (max-width: 996px) {
-  /* デスクトップ docked サイドバーを強制表示 */
-  .theme-doc-sidebar-container {
-    display: block !important;
-  }
-  /* ハンバーガーメニューとドロワーを隠す */
-  .navbar__toggle {
-    display: none !important;
-  }
-  .navbar-sidebar,
-  .navbar-sidebar__backdrop {
-    display: none !important;
+/* モバイルドロワー幅の調整（デフォルトはフルスクリーン） */
+@media (max-width: 996px) {
+  .navbar-sidebar {
+    width: 280px !important;
   }
 }
