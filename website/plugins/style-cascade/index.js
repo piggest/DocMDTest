@@ -90,10 +90,13 @@ module.exports = function styleCascadePlugin(context, options) {
           fs.copyFileSync(cssAbs, path.join(staticOut, served));
           copiedCss.set(cssAbs, served);
         }
-        // MDファイルのルートURLを算出する（Docusaurusのroutepath規則に準拠）
+        // MDファイルのルートURLを算出する（Docusaurusのroutepath規則に準拠：各セグメント先頭の `数字-` 接頭辞は除去される）
         const relMd = path.relative(docsDir, md).replace(/\.md$/, '').replace(/\\/g, '/');
-        const route = baseUrl + relMd;
-        map[route] = baseUrl + 'styles-cascade/' + served;
+        const stripped = relMd.split('/').map(seg => seg.replace(/^\d+-/, '')).join('/');
+        const variants = new Set([baseUrl + relMd, baseUrl + stripped]);
+        for (const v of variants) {
+          map[v] = baseUrl + 'styles-cascade/' + served;
+        }
       }
 
       // クライアントからfetchできるようにJSONマップも書き出す
