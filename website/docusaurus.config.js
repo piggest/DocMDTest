@@ -9,8 +9,6 @@ const config = {
   url: 'https://piggest.github.io',
   baseUrl: '/DocMDTest/',
 
-  clientModules: ['./src/clientModules/forceDesktopSidebar.js'],
-
   organizationName: 'piggest',
   projectName: 'DocMDTest',
   trailingSlash: false,
