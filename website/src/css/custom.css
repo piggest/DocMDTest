@@ -4,16 +4,6 @@
   --ifm-color-primary: #2e8555;
 }
 
-/* モバイル時のドロワーもフルスクリーンではなく狭める */
-@media (max-width: 996px) {
-  .navbar-sidebar {
-    width: 280px !important;
-  }
-  .navbar-sidebar__backdrop {
-    background: rgba(0, 0, 0, 0.4);
-  }
-}
-
 :root {
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
@@ -35,31 +25,20 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-/* ========== サイドバーピン留めモード ========== */
-/* 狭いウィンドウでもサイドバーを常時表示 */
-@media (max-width: 996px) {
-  html.sidebar-pinned .navbar-sidebar__backdrop {
+/* ========== サイドバーの表示切替閾値を下げる ========== */
+/* Docusaurus デフォルト: ≥997px で docked、≤996px で drawer */
+/* 上書き: ≥601px で docked を優先、≤600px のみ drawer */
+@media (min-width: 601px) and (max-width: 996px) {
+  /* デスクトップ docked サイドバーを強制表示 */
+  .theme-doc-sidebar-container {
+    display: block !important;
+  }
+  /* ハンバーガーメニューとドロワーを隠す */
+  .navbar__toggle {
     display: none !important;
   }
-  html.sidebar-pinned .navbar-sidebar {
-    display: flex !important;
-    position: fixed !important;
-    top: var(--ifm-navbar-height) !important;
-    left: 0 !important;
-    bottom: 0 !important;
-    width: 220px !important;
-    height: calc(100vh - var(--ifm-navbar-height)) !important;
-    transform: none !important;
-    overflow-y: auto !important;
-    border-right: 1px solid var(--ifm-color-emphasis-200, #eee);
-    z-index: 100;
-  }
-  /* 本文を右にずらす */
-  html.sidebar-pinned .main-wrapper {
-    margin-left: 220px;
-  }
-  /* モバイルナビゲーションの閉じるボタンを隠す */
-  html.sidebar-pinned .navbar-sidebar__close {
+  .navbar-sidebar,
+  .navbar-sidebar__backdrop {
     display: none !important;
   }
 }
