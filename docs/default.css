@@ -1,8 +1,8 @@
-/* デフォルト全体テーマ：背景塗り（青系） */
+/* デフォルト全体テーマ：背景塗り（藍色系） */
 /* docs/ ルートに配置。各フォルダ/ファイルにより限定的なCSSがあればそれが優先。 */
 
 .theme-doc-markdown h1 {
-  background: #0d47a1;
+  background: #1a237e;
   color: #fff;
   padding: 16px 20px;
   margin-bottom: 24px;
@@ -11,7 +11,7 @@
 }
 
 .theme-doc-markdown h2 {
-  background: #1976d2;
+  background: #283593;
   color: #fff;
   padding: 10px 16px;
   margin-top: 36px;
@@ -20,42 +20,42 @@
 }
 
 .theme-doc-markdown h3 {
-  color: #1976d2;
-  border-bottom: 2px solid #bbdefb;
+  color: #283593;
+  border-bottom: 2px solid #c5cae9;
   padding: 6px 0 4px 12px;
   position: relative;
 }
 .theme-doc-markdown h3::before {
   content: '▎';
-  color: #1976d2;
+  color: #283593;
   position: absolute;
   left: 0;
 }
 
 .theme-doc-markdown table thead {
-  background: #0d47a1;
+  background: #1a237e;
   color: #fff;
 }
 .theme-doc-markdown table tbody tr:nth-child(even) {
-  background: #f5f9ff;
+  background: #f4f6fc;
 }
 .theme-doc-markdown table th,
 .theme-doc-markdown table td {
   padding: 8px 12px;
-  border-bottom: 1px solid #e0e8f0;
+  border-bottom: 1px solid #dbe1ee;
 }
 
 .theme-doc-markdown blockquote {
-  background: #e3f2fd;
-  border-left: 6px solid #0d47a1;
+  background: #e8eaf6;
+  border-left: 6px solid #1a237e;
   padding: 12px 16px;
-  color: #0d47a1;
+  color: #1a237e;
   border-radius: 0 4px 4px 0;
 }
 
 .theme-doc-markdown code {
-  background: #e3f2fd;
-  color: #0d47a1;
+  background: #e8eaf6;
+  color: #1a237e;
   padding: 2px 6px;
   border-radius: 3px;
   font-size: 0.9em;
