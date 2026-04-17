@@ -59,6 +59,12 @@
     flex-direction: column;
     display: flex;
   }
+  /* menu 本体の表示 */
+  [class*='menu_'] {
+    flex-grow: 1;
+    padding: 0.5rem;
+    overflow-y: auto;
+  }
   /* ハンバーガーメニューとドロワーを隠す */
   .navbar__toggle {
     display: none !important;
