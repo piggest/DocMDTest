@@ -1,6 +1,5 @@
 ---
 sidebar_position: 99
-title: サンプル - カレーの作り方
 ---
 
 # カレーの作り方
