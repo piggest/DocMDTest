@@ -60,6 +60,8 @@ const config = {
     ],
   ],
 
+  clientModules: ['./src/clientModules/pinSidebar.js'],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({

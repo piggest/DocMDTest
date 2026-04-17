@@ -34,3 +34,32 @@
   --ifm-color-primary-lightest: #32d8b4;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* ========== サイドバーピン留めモード ========== */
+/* 狭いウィンドウでもサイドバーを常時表示 */
+@media (max-width: 996px) {
+  html.sidebar-pinned .navbar-sidebar__backdrop {
+    display: none !important;
+  }
+  html.sidebar-pinned .navbar-sidebar {
+    display: flex !important;
+    position: fixed !important;
+    top: var(--ifm-navbar-height) !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    width: 220px !important;
+    height: calc(100vh - var(--ifm-navbar-height)) !important;
+    transform: none !important;
+    overflow-y: auto !important;
+    border-right: 1px solid var(--ifm-color-emphasis-200, #eee);
+    z-index: 100;
+  }
+  /* 本文を右にずらす */
+  html.sidebar-pinned .main-wrapper {
+    margin-left: 220px;
+  }
+  /* モバイルナビゲーションの閉じるボタンを隠す */
+  html.sidebar-pinned .navbar-sidebar__close {
+    display: none !important;
+  }
+}
