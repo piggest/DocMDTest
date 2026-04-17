@@ -1,0 +1,183 @@
+/* ターミナルテーマ — CLI / Cyberpunk 風 */
+
+.theme-doc-markdown {
+  font-family: 'SF Mono', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #3fb950;
+  background-color: #0d1117;
+  padding: 24px;
+  border: 1px solid #30363d;
+}
+
+/* 見出し */
+.theme-doc-markdown h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #58a6ff;
+  border-bottom: none;
+  border: double 3px #58a6ff;
+  padding: 10px 14px;
+  margin-bottom: 24px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.theme-doc-markdown h1::before {
+  content: '# ';
+  color: #3fb950;
+  opacity: 0.6;
+}
+
+.theme-doc-markdown h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #58a6ff;
+  border-bottom: 1px dotted #30363d;
+  padding-bottom: 6px;
+  margin-top: 32px;
+  margin-bottom: 12px;
+  letter-spacing: 0.03em;
+}
+
+.theme-doc-markdown h2::before {
+  content: '## ';
+  color: #3fb950;
+  opacity: 0.6;
+}
+
+.theme-doc-markdown h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #a5d6ff;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.theme-doc-markdown h3::before {
+  content: '### ';
+  color: #3fb950;
+  opacity: 0.6;
+}
+
+/* 段落 */
+.theme-doc-markdown p {
+  margin-bottom: 12px;
+  color: #c9d1d9;
+}
+
+/* リスト */
+.theme-doc-markdown ul {
+  padding-left: 20px;
+  margin-bottom: 12px;
+  list-style: none;
+}
+
+.theme-doc-markdown ul li::before {
+  content: '> ';
+  color: #3fb950;
+}
+
+.theme-doc-markdown ol {
+  padding-left: 20px;
+  margin-bottom: 12px;
+}
+
+.theme-doc-markdown li {
+  margin-bottom: 4px;
+  color: #c9d1d9;
+}
+
+/* テーブル */
+.theme-doc-markdown table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #30363d;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.theme-doc-markdown th {
+  background-color: #161b22;
+  color: #58a6ff;
+  font-weight: 700;
+  padding: 8px 12px;
+  border: 1px solid #30363d;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+}
+
+.theme-doc-markdown td {
+  padding: 7px 12px;
+  border: 1px solid #21262d;
+  color: #c9d1d9;
+}
+
+.theme-doc-markdown tr:nth-child(even) td {
+  background-color: #161b22;
+}
+
+/* blockquote */
+.theme-doc-markdown blockquote {
+  border: 1px dashed #3fb950;
+  margin: 16px 0;
+  padding: 10px 16px;
+  color: #3fb950;
+  background-color: #0d1f0d;
+}
+
+.theme-doc-markdown blockquote p {
+  margin: 0;
+  color: #3fb950;
+}
+
+.theme-doc-markdown blockquote::before {
+  content: '⚠ ';
+  color: #f0b429;
+}
+
+/* コードブロック */
+.theme-doc-markdown pre {
+  background-color: #010409;
+  border: 1px solid #30363d;
+  border-left: 3px solid #3fb950;
+  padding: 14px 16px;
+  overflow-x: auto;
+  margin-bottom: 16px;
+  font-size: 13px;
+}
+
+.theme-doc-markdown code {
+  font-family: 'SF Mono', 'Cascadia Code', 'Fira Code', Consolas, monospace;
+  color: #3fb950;
+}
+
+/* インラインコード */
+.theme-doc-markdown :not(pre) > code {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  padding: 1px 6px;
+  color: #f0b429;
+  font-size: 13px;
+}
+
+/* 強調 */
+.theme-doc-markdown strong {
+  font-weight: 700;
+  color: #f0b429;
+}
+
+.theme-doc-markdown em {
+  font-style: normal;
+  color: #a5d6ff;
+  text-decoration: underline dotted;
+}
+
+/* 横線 */
+.theme-doc-markdown hr {
+  border: none;
+  border-top: 1px dashed #30363d;
+  margin: 24px 0;
+}
