@@ -1,0 +1,50 @@
+.theme-doc-markdown { counter-reset: h2section; }
+.theme-doc-markdown h1 {
+  color: #4a148c;
+  font-size: 2.2em;
+  text-align: center;
+  padding: 16px 0;
+  border-top: 3px double #4a148c;
+  border-bottom: 3px double #4a148c;
+  margin-bottom: 36px;
+}
+.theme-doc-markdown h2 {
+  counter-increment: h2section;
+  counter-reset: h3section;
+  color: #4a148c;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 36px;
+}
+.theme-doc-markdown h2::before {
+  content: counter(h2section);
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  background: #4a148c;
+  color: #fff;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 0.7em;
+  flex-shrink: 0;
+}
+.theme-doc-markdown h3 {
+  counter-increment: h3section;
+  color: #6a1b9a;
+}
+.theme-doc-markdown h3::before {
+  content: counter(h2section) "." counter(h3section) " ";
+  color: #ab47bc;
+  font-weight: bold;
+  margin-right: 6px;
+}
+.theme-doc-markdown table thead { background: #f3e5f5; color: #4a148c; }
+.theme-doc-markdown blockquote {
+  border-left: 6px solid #4a148c;
+  background: #f3e5f5;
+  padding: 12px 16px;
+  color: #4a148c;
+}
